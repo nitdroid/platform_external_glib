@@ -1,5 +1,5 @@
 # This file is the top android makefile for all sub-modules.
-ifeq ($(strip $(BUILD_WITH_OFONO)),false)
+ifeq ($(strip $(BUILD_WITH_OFONO)),true)
 
 LOCAL_PATH := $(call my-dir)
 
