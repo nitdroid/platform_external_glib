@@ -1652,34 +1652,7 @@ extern __typeof (g_blow_chunks) IA__g_blow_chunks __attribute((visibility("hidde
 #endif
 #endif
 #endif
-#if IN_HEADER(__G_SLICE_H__)
-#if IN_FILE(__G_SLICE_C__)
-extern __typeof (g_slice_alloc) IA__g_slice_alloc __attribute((visibility("hidden"))) G_GNUC_MALLOC;
-#define g_slice_alloc IA__g_slice_alloc
 
-extern __typeof (g_slice_alloc0) IA__g_slice_alloc0 __attribute((visibility("hidden"))) G_GNUC_MALLOC;
-#define g_slice_alloc0 IA__g_slice_alloc0
-
-extern __typeof (g_slice_free1) IA__g_slice_free1 __attribute((visibility("hidden")));
-#define g_slice_free1 IA__g_slice_free1
-
-extern __typeof (g_slice_free_chain_with_offset) IA__g_slice_free_chain_with_offset __attribute((visibility("hidden")));
-#define g_slice_free_chain_with_offset IA__g_slice_free_chain_with_offset
-
-extern __typeof (g_slice_set_config) IA__g_slice_set_config __attribute((visibility("hidden")));
-#define g_slice_set_config IA__g_slice_set_config
-
-extern __typeof (g_slice_get_config) IA__g_slice_get_config __attribute((visibility("hidden")));
-#define g_slice_get_config IA__g_slice_get_config
-
-extern __typeof (g_slice_get_config_state) IA__g_slice_get_config_state __attribute((visibility("hidden")));
-#define g_slice_get_config_state IA__g_slice_get_config_state
-
-extern __typeof (g_slice_debug_tree_statistics) IA__g_slice_debug_tree_statistics __attribute((visibility("hidden")));
-#define g_slice_debug_tree_statistics IA__g_slice_debug_tree_statistics
-
-#endif
-#endif
 #if IN_HEADER(__G_MESSAGES_H__)
 #if IN_FILE(__G_MESSAGES_C__)
 extern __typeof (g_printf_string_upper_bound) IA__g_printf_string_upper_bound __attribute((visibility("hidden")));
@@ -2820,11 +2793,6 @@ extern __typeof (g_string_up) IA__g_string_up __attribute((visibility("hidden"))
 #define g_string_up IA__g_string_up
 
 #endif
-extern __typeof (g_str_equal) IA__g_str_equal __attribute((visibility("hidden")));
-#define g_str_equal IA__g_str_equal
-
-extern __typeof (g_str_hash) IA__g_str_hash __attribute((visibility("hidden")));
-#define g_str_hash IA__g_str_hash
 
 #endif
 #endif

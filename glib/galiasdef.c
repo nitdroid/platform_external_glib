@@ -2823,11 +2823,6 @@ extern __typeof (g_string_down) g_string_down __attribute((alias("IA__g_string_d
 extern __typeof (g_string_up) g_string_up __attribute((alias("IA__g_string_up"), visibility("default")));
 
 #endif
-#undef g_str_equal 
-extern __typeof (g_str_equal) g_str_equal __attribute((alias("IA__g_str_equal"), visibility("default")));
-
-#undef g_str_hash 
-extern __typeof (g_str_hash) g_str_hash __attribute((alias("IA__g_str_hash"), visibility("default")));
 
 #endif
 #endif

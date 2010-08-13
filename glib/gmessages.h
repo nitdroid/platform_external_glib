@@ -264,6 +264,24 @@ GPrintFunc      g_set_printerr_handler  (GPrintFunc      func);
 
 #endif /* !G_DISABLE_ASSERT */
 
+/* Provide macros for graceful error handling.
+ * The "return" macros will return from the current function.
+ * Two different definitions are given for the macros in
+ * order to support gcc's __PRETTY_FUNCTION__ capability.
+ */
+
+#if 0
+
+#define g_warn_if_reached()     do { g_warn_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, NULL); } while (0)
+#define g_warn_if_fail(expr)    do { if G_LIKELY (expr) ; else \
+      g_warn_message (G_LOG_DOMAIN, __FILE__, __LINE__, G_STRFUNC, #expr); } while (0)
+
+#else
+
+#define g_warn_if_reached()     do { (void)0; } while(0);
+#define g_warn_if_fail(expr)    do { if ( expr ) (void)0; } while(0);
+
+#endif
 
 #ifdef G_DISABLE_CHECKS
 

@@ -496,5 +496,7 @@
 /* Build with android platform */
 #define BUILD_WITH_ANDROID 1
 
+#define G_BIT_LOCK_FORCE_FUTEX_EMULATION 1
+
 #include <glibconfig.h>
 

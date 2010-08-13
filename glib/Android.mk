@@ -56,7 +56,15 @@ LOCAL_SRC_FILES:= \
     gutils.c        \
     gprintf.c       \
     giounix.c       \
-    gspawn.c
+    gspawn.c        \
+    gvariant.c      \
+    gvariant-core.c \
+    gvarianttype.c  \
+    gvarianttypeinfo.c  \
+    gvariant-serialiser.c \
+    gbuffer.c       \
+    gbitlock.c      \
+    gtestutils.c
 
 LOCAL_MODULE:= libglib-2.0
 
