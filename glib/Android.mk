@@ -10,6 +10,7 @@ LOCAL_SRC_FILES:= \
     gbase64.c       \
     gbookmarkfile.c \
     gcache.c        \
+    gchecksum.c	    \
     gcompletion.c   \
     gconvert.c      \
     gdataset.c      \
@@ -85,5 +86,7 @@ LOCAL_CFLAGS := \
     -DPOSIX_MALLOC_THRESHOLD=10 \
     -DG_DISABLE_DEPRECATED \
     -DGLIB_COMPILATION 
+
+LOCAL_PRELINK_MODULE := false
 
 include $(BUILD_SHARED_LIBRARY)
