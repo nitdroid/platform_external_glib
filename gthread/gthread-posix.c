@@ -50,6 +50,7 @@ extern gint g_thread_priority_map [G_THREAD_PRIORITY_URGENT + 1];
 #include <sched.h>
 #endif
 
+#define G_GNUC_PRETTY_FUNCTION  __PRETTY_FUNCTION__
 #define posix_check_err(err, name) G_STMT_START{			\
   int error = (err); 							\
   if (error)	 		 		 			\

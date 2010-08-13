@@ -21,4 +21,6 @@ LOCAL_CFLAGS := \
     -U_OSF_SOURCE                   \
     -DG_DISABLE_DEPRECATED 
 
+LOCAL_PRELINK_MODULE := false
+
 include $(BUILD_SHARED_LIBRARY)
