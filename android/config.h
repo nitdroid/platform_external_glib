@@ -460,7 +460,7 @@
 #define STDC_HEADERS 1
 
 /* Using GNU libiconv */
-#undef USE_LIBICONV_GNU
+#define USE_LIBICONV_GNU
 
 /* Using a native implementation of iconv in a separate library */
 #undef USE_LIBICONV_NATIVE

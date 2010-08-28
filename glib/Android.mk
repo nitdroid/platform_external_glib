@@ -64,14 +64,17 @@ LOCAL_SRC_FILES:= \
     gvariant-serialiser.c \
     gbuffer.c       \
     gbitlock.c      \
-    gtestutils.c
+    gtestutils.c    \
+	libiconv/iconv.c \
+	libiconv/localcharset.c
+##
 
 LOCAL_MODULE:= libglib-2.0
 
 LOCAL_C_INCLUDES := 			\
 	$(GLIB_TOP)			\
 	$(GLIB_TOP)/android/		\
-	$(LOCAL_PATH)/libcharset        \
+	$(LOCAL_PATH)/libiconv        \
 	$(LOCAL_PATH)/gnulib            \
 	$(LOCAL_PATH)/pcre
 
