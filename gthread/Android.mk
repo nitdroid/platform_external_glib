@@ -7,6 +7,7 @@ LOCAL_SRC_FILES:= \
 LOCAL_SHARED_LIBRARIES := libglib-2.0
 
 LOCAL_MODULE:= libgthread-2.0
+LOCAL_MODULE_TAGS := optional
 
 LOCAL_C_INCLUDES := 		\
 	$(LOCAL_PATH)		\
